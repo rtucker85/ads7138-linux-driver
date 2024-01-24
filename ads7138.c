@@ -165,8 +165,7 @@ static struct attribute *ads7138_attrs[] = {
 
 ATTRIBUTE_GROUPS(ads7138);
 
-static int ads7138_probe(struct i2c_client *client,
-			 const struct i2c_device_id *id)
+static int ads7138_probe(struct i2c_client *client)
 {
 	struct device *dev = &client->dev;
 	struct ads7138_data *data;
